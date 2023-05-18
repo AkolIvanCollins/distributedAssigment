@@ -1,0 +1,15 @@
+{
+	"folders": [
+		{
+			"name": "helloworld",
+			"path": ".."
+		},
+		{
+			"name": "c c++",
+			"path": "../../../OneDrive/Desktop/c c++"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "helloworld"
+	}
+}

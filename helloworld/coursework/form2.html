@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Form2</title>
+</head>
+<body>
+    <div class="form">
+        <h1> LABORATORY FORM</h1>
+        <form action="submit-form.php" method="POST">
+            <!-- Form fields will be added here -->
+  <label for="name">Physician Name:</label>
+  <input type="text" id="name" name="name" placeholder="Enter physician name" required>
+
+  <label for="name">Patient Name:</label>
+  <input type="text" id="name" name="name" placeholder="Enter patient name" required>
+
+  <label for="email">Description:</label>
+  <input type="text" id="text" name="Description" placeholder="Enter laboratory test and results" required>
+
+  <input type="submit" value="SUBMIT">
+          </form>
+    </div>
+    <script>
+        document.querySelector('form').addEventListener('submit', function(event) {
+          event.preventDefault(); // Prevent the form from submitting and refreshing the page
+      
+          // Perform actions or validation here
+      
+          // Access form field values
+          const name = document.getElementById('name').value;
+          const Description = document.getElementById('description').value;
+      
+          // Perform further processing or submit data using AJAX, fetch, etc.
+        });
+      </script>
+      
+</body>
+</html>

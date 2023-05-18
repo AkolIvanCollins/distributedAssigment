@@ -1,0 +1,68 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+.form{
+    position: absolute;
+    inset-block-start: 70%;
+    inset-inline-start: 50%;
+    transform: translate(-50% -50%);
+    inline-size: 500px;
+    background: paleturquoise;
+    background-image: url(images/hospital.avif);
+}
+.form h1{
+    font-size: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    margin: 70px 0;
+
+}
+.form p{
+    font-size: 20px;
+    margin: 15px 0;
+}
+.form input{
+    font-size: 16px;
+    padding: 15px 10px;
+    inline-size: 100%;
+    border: 0;
+    border-radius: 5px;
+    outline: none;
+}
+button{
+    inline-size: 200px;
+    padding: 15px 0;
+    text-align: center;
+    margin: 20px 10px;
+    border-radius: 25px;
+    font-weight: bold;
+    border:  2px solid #009688;
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+
+}
+span{
+    background: none;
+    block-size: 100%;
+    inline-size: 100%;
+    border-radius: 25px;
+    position: absolute;
+    inset-inline-start: 0;
+    inset-block-end: 0;
+    z-index: -1;
+    transition: 0.5s;
+}
+button:hover span{
+    inline-size: 100%;
+    color: #fff;
+
+}
+button:hover{
+    border: none;
+    background-color: #009688;
+    }

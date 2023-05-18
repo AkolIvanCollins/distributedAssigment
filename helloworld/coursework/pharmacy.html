@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VISIT OUR PHARMACY</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylef.css">
+    <style>
+      ul li{
+        list-style: none;
+      }
+      ul{
+        margin-inline-start: -39px;
+      }
+      body{
+        background-image: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75)), url(images/background.webp);
+        block-size: 100vh;
+        background-size: cover;
+        background-position: center;
+        font-weight: 400;
+        color: white;
+        
+      }
+      .footer{
+        font-size: 1rem;
+        font-family: sans-serif;
+        color: white;
+        margin-block-start: 1000px;
+      }
+      .theme-bg-primary{
+        background: rgba(255,255,255,0.24);
+        box-shadow: 0 8px 32px 0 rgba(19,19,20,0.37);
+        backdrop-filter: blur(4px);
+        border: 3px solid rgba(255,255,255,0.18);
+      }
+      .footer ul li a{
+        color: white;
+        font-size: 17px;
+         .form{
+            margin-block-start: 0px; 
+        } 
+      }
+    </style>
+</head>
+<body>
+    
+    <div class="banner">
+        <div class="navbar">
+
+        <ul>
+            <li><a href="home.html">home</a></li>
+            <li><a href="services.html">our services</a></li>
+            <li><a href="pharmacy.html">pharmacy</a></li>
+        </ul>
+    </div>
+        
+        <div class="bothform">
+            <div class="form">
+                <h1> LABORATORY FORM</h1>
+                <form action="submit-form.php" method="POST">
+                    <!-- Form fields will be added here -->
+                    <label for="name">Physician Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter physician name" required>
+                    
+                    <label for="name">Patient Name:</label>
+                    <input type="text" id="name" name="name" placeholder="Enter patient name" required>
+                    
+                    <label for="email">Description:</label>
+                    <input type="text" id="text" name="Description" placeholder="Enter laboratory test and results" required>
+                    
+                    <input type="submit" value="SUBMIT">
+                  </form>
+            </div>
+            <script>
+                document.querySelector('form').addEventListener('submit', function(event) {
+                  event.preventDefault(); // Prevent the form from submitting and refreshing the page
+              
+                  // Perform actions or validation here
+              
+                  // Access form field values
+                  const name = document.getElementById('name').value;
+                  const Description = document.getElementById('description').value;
+              
+                  // Perform further processing or submit data using AJAX, fetch, etc.
+                });
+              </script>
+            
+            <div class="form2">
+                <h1>MAKE AN APPOINTMENT</h1>
+                    <form id="appointmentForm">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required><br>
+                    
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required><br>
+                    
+                        <label for="doctor">Select a doctor:</label>
+                        <select id="doctor" name="doctor" required>
+                        <option value="">Choose a doctor</option>
+                        <option value="Dr. Smith">Dr. Smith</option>
+                        <option value="Dr. Johnson">Dr. Johnson</option>
+                        <option value="Dr. Davis">Dr. Davis</option>
+                        </select><br>
+                    
+                        <label for="date">Select a date:</label>
+                        <input type="date" id="date" name="date" required><br>
+                    
+                        <label for="time">Select a time:</label>
+                        <input type="time" id="time" name="time" required><br>
+                    
+                        <input type="submit" value="Submit">
+                    </form>
+                    
+                    <script>
+                        document.getElementById('appointmentForm').addEventListener('submit', function(event) {
+                        event.preventDefault();
+                    
+                        // Access form field values
+                        const name = document.getElementById('name').value;
+                        const email = document.getElementById('email').value;
+                        const doctor = document.getElementById('doctor').value;
+                        const date = document.getElementById('date').value;
+                        const time = document.getElementById('time').value;
+                    
+                        // Perform further processing or submit data using AJAX, fetch, etc.
+                        // You can also perform form validation before submission
+                    
+                        // Example: Display the submitted data in the console
+                        console.log('Name:', name);
+                        console.log('Email:', email);
+                        console.log('Doctor:', doctor);
+                        console.log('Date:', date);
+                        console.log('Time:', time);
+                    
+                        // Reset the form after submission if needed
+                        // document.getElementById('appointmentForm').reset();
+                        });
+                    </script>
+            </div>
+        </div>
+
+        
+          
+
+    </div>
+    <footer class="footer theme-bg-primary wow rollIn">
+        <div class="container">
+            <div class="row" style="margin-inline-start: 50px;">
+                <div class="col-lg-3">
+                    <h4 class="col-heading">highlights</h4>
+                    <ul>
+                        <li><a href="">Our History</a></li>
+                        <li><a href="">contact us</a></li>
+                        <li><a href="">QUICK LINKS</a></li>
+                        
+                    </ul>
+
+                </div>
+                <div class="col-lg-3">
+                    <h4 class="col-heading">RESOURCES</h4>
+                    <ul>
+                        <li><a href="">SERVICES</a></li>
+                        <li><a href="">SUPPORT</a></li>
+                        <li><a href="">QUICK LINKS</a></li>
+                        
+                    </ul>
+            </div>
+            <div class="col-lg-3">
+                <h4 class="col-heading">LEGAL</h4>
+                <ul>
+                    <li><a href="">PRIVACY</a></li>
+                    <li><a href="">TERMS OF SERVICE</a></li>
+                    <li><a href="">INSURANCE</a></li>
+                    
+                </ul>
+        </div>
+        <div class="col-lg-3">
+            <h4 class="col-heading">STAY CONNECTED</h4>
+            <ul class="social-list">
+                <li class="list-inline-item">
+                    <a href="">
+                        <i class="fa fa-instagram"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                </li>
+                <li class="list-inline-item">
+                    <a href="">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                </li>
+                
+            </ul>
+            <div class="mb-2">
+                company name <br>
+                P.O.BOX 312 <br>
+                Nakasero, View Drive <br>
+                Kampala Uganda.
+            </div>
+            <div class="text-white">
+                <a href="">genxhospital@co.ug</a>
+            </div>
+    </div>
+    <div class="container">
+        <hr>
+    </div>
+      <div class="container text-center">
+        <h3 class="mb-3">Get the UserManual</h3>
+        <div class="section-intro mb-4 mx-auto">download the UserManual
+
+        </div>
+        <ul class="d-inline-block">
+            <li class="list-item mr-3">
+                <a href="">
+                    <img src="image/appstore-android.svg" alt="" class="ios">
+                </a>
+            </li>
+            <li class="list-item mr-3">
+                <a href="">
+                    <img src="image/appstore-apple.svg" alt="" class="android">
+                </a>
+            </li>
+        </ul>
+      </div>
+      <div class="footer-bottom text-center pb-5">
+        <small class="copyright">
+            @genxHospital 2023. All Rights Reserved. <i class="fa fa-heart" style="color: blue;"></i>
+            by <a href="">GROUP E</a>for you.
+        </small>
+      </div>
+        </div>
+        
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</body>
+</html>
